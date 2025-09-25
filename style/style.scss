@@ -1,0 +1,194 @@
+/*-- scss:defaults --*/
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/style/fonts/Inter-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/style/fonts/Inter-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/style/fonts/Inter-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/style/fonts/Inter-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/style/fonts/Inter-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/style/fonts/DMSerifText-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Serif Text";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/style/fonts/DMSerifText-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/style/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/style/fonts/JetBrainsMono-Italic.woff2") format("woff2");
+}
+
+$font-family-sans-serif: "Inter", Helvetica, sans-serif !default;
+$font-family-monospace: "JetBrains Mono", monospace !default;
+$presentation-heading-font: "DM Serif Text", serif !default;
+
+$body-bg: #102730 !default;
+$body-color: #ffffff !default;
+$link-color: #f5a623 !default;
+
+.reveal {
+  .slide {
+    h1, h2, h3 {
+      font-weight: 400;
+    }
+  }
+}
+
+// frost and darken non-video backgrounds
+.slide-background :not(:has(video)) {
+  filter: blur(8px) brightness(0.75);
+}
+
+// name, color1, color2, body-color
+$section-styles:
+  "aqua"   "#00aadd" "#66dd00" "#16365a",
+  "sunset" "#c21500" "#ffc500" "#4b1625",
+  "carbon" "#222222" "#444444" "#222222",
+  "moss"   "#134E5E" "#71B280" "#0b2c36",
+  "indigo" "#4776E6" "#8E54E9" "#152447";
+
+/*-- scss:rules --*/
+.reveal {
+
+  p, li {
+    opacity: 0.9;
+    // filter: drop-shadow(0 0 16px #00000099);
+  }
+
+  p.caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50%;
+    opacity: 75%;
+    text-align: center;
+  }
+
+  blockquote {
+    color: black;
+    opacity: 0.75;
+  }
+
+  // h1, h2, h3, h4, .title-content {
+  //   filter: drop-shadow(0 0 16px #00000033);
+  // }
+
+  h2 {
+    margin-block-end: 0.5em;
+  }
+
+  .small {
+    font-size: 70%;
+  }
+  .deemph {
+    opacity: 75%;
+  }
+
+  .hcenter {
+    text-align: center;
+  }
+
+  .slides .title-slide {
+    
+    margin-top: 12.5%;
+    
+    h1 {
+      line-height: 80%;
+    }
+  }
+
+  .slides .stack .title-slide {
+    h1 {
+      line-height: 120%;
+    }
+  }
+
+  p + p, li + li {
+    margin-block-start: 1em;
+  }
+
+  /* specific elements */
+
+  #monthly-table, #annual-table {
+    thead, tbody {
+      font-size: 90%;
+    }
+  }
+
+  /* slide section theming */
+  
+  @each $name, $color1, $color2, $body-color in $section-styles {
+
+    // anything in here will cover the whole section
+    // that uses this identifier
+
+    section.stack:has(#section-#{$name}) {
+
+      p, li {
+        color: #{$body-color};
+      }
+
+      h1, h2, h3 {
+        background: linear-gradient(45deg, #{$color1}, #{$color2});
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+    }
+
+  }
+}

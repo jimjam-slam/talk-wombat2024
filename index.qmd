@@ -1,0 +1,78 @@
+---
+pagetitle: Closing the scrollytelling gap with Closeread
+author: James Goldie
+knitr:
+  opts_chunk:
+    dev.args:
+      bg: transparent
+format:
+  revealjs: 
+    theme: [default, style/style.scss]
+    highlight-style: github
+    width: 1400
+---
+
+# Closing the scrollytelling gap with Closeread {
+  background-video="images/bg.mp4"
+  background-video-autoplay="true"
+  background-video-loop="true"}
+ 
+:::{.title-content .small}
+<br> 
+![](images/countercurrent.png){style="height:60px" alt="CounterCurrent logo"}  
+**JAMES GOLDIE**  
+DATA ENGINEER
+
+:::
+
+# Bullets {background-image="images/bg.png"}
+
+# What's scrollytelling?
+
+# Why is scrollytelling hard to do well?
+
+I'm currently at CounterCurrent, helping ships save less fuel
+
+But I worked as a data journalist at Monash
+
+Quarto made it super fast
+
+(transition from why I love Quarto)
+
+## Quarto has made regular web pages easy for data people
+
+- (compare plain knitted HTML to Quarto)
+
+## Engineering required for scrollytelling
+
+- Detecting whether things are on screen
+- Transitions
+- Sizing and positioning content
+
+- Data journalism teams split this into engineering, design and data journalism
+- Previous single-person solutions were commercial (eg. ESRI)
+
+# Enter Closeread
+
+- Goal: make scrollytelling accessible to people familiar with Quarto
+- Goal: reasonable defaults with powerful options
+- Other goals
+- Design implications
+  
+# Closeread Contest
+
+- [We're running another contest!](https://www.causeweb.org/cause/contests/data-scrollytelling) Closes Dec 20
+
+# What's on the horizon
+
+## Widget support
+
+- Contest entries that tried to use htmlwidgets
+- htmlwidgets, Jupyter widgets, ...
+
+## Video support
+
+- Videos that play when they enter
+- Can be used for mood setting, interviews
+    
+
