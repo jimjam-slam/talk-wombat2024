@@ -203,35 +203,35 @@ Sports • Social policy • Mathematics • Finance • Personal stories • Hi
 
 **Grand Prize:** Screenshot of EURO 2024 Final scrollytelling Analysis
 
-![](cr-soccer.png){alt="Screenshot of EURO 2024 Final scrollytelling Analysis"}
+![](images/cr-soccer.png){alt="Screenshot of EURO 2024 Final scrollytelling Analysis" style="scale: 1.5; transform-origin: top;"}
 
 ## Prizes {.center .hcenter background-image="images/bg.png"}
 
-**Grand Prize:** Council Housing & Neighbourhood Income Inequality in Vienna
+**Special Prize:** Council Housing & Neighbourhood Income Inequality in Vienna
 
-![](cr-vienna.png){alt="Council Housing & Neighbourhood Income Inequality in Vienna"}
-
-## Prizes {.center .hcenter background-image="images/bg.png"}
-
-**Grand Prize:** Which way do you ski?
-
-![](cr-ski.png){alt="Which way do you ski?"}
+![](images/cr-vienna.png){alt="Council Housing & Neighbourhood Income Inequality in Vienna" style="scale: 1.5; transform-origin: top;"}
 
 ## Prizes {.center .hcenter background-image="images/bg.png"}
 
-**Grand Prize:** World Population Flags
+**Special Prize:** Which way do you ski?
 
-![](cr-flags.png){alt="World Population Flags"}
+![](images/cr-ski.png){alt="Which way do you ski?" style="scale: 1.5; transform-origin: top;"}
+
+## Prizes {.center .hcenter background-image="images/bg.png"}
+
+**Special Prize:** World Population Flags
+
+![](images/cr-flags.png){alt="World Population Flags" style="scale: 1.5; transform-origin: top;"}
 
 ## Common themes {.center .hcenter background-image="images/bg.png"}
 
-Less is more
-[1-2 sentences on screen at a time]{.small .deemph}
+Less is more  
+[1–2 sentences on screen at a time]{.small .deemph}
 
-You still need a compelling story
+You still need a compelling story  
 [But that doesn't necessarily mean prize-winning research!]{.small .deemph}
 
-Build things up
+Build things up  
 [Introduce one layer/facet/group at a time]{.small .deemph}
 
 ## Another contest? Yes! {.center .hcenter background-image="images/bg.png"}
