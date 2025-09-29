@@ -39,14 +39,14 @@ Code: **<https://github.com/jimjam-slam/talk-wombat2024>**
 
 ## {background-iframe="https://www.nytimes.com/projects/2012/snow-fall/index.html#/?part=tunnel-creek" background-interactive="true"}
 
-:::{style="background: #000000cc; padding: 0.25em 0.75em; border-radius: 2em; backdrop-filter: blur(10px) brightness(0.75);width: max-content; "}
+:::{.overlay}
 New York Times  
 [Snow Fall: The Avalanche at Tunnel Creek]{.small .deemph}
 :::
 
 ## {background-iframe="https://www.miamiherald.com/news/special-reports/surfside-investigation/article256633336.html" background-interactive="true"}
 
-:::{style="background: #000000cc; padding: 0.25em 0.75em; border-radius: 2em; backdrop-filter: blur(10px) brightness(0.75);width: max-content; "}
+:::{.overlay}
 Miami Herald  
 [House of Cards]{.small .deemph}
 :::
@@ -214,7 +214,7 @@ Sports • Social policy • Mathematics • Finance • Personal stories • Hi
 ## Prizes {.center .hcenter background-image="images/bg.png"}
 
 **Special Prize:** Which way do you ski?
-
+ 
 ![](images/cr-ski.png){alt="Which way do you ski?" style="scale: 1.5; transform-origin: top;"}
 
 ## Prizes {.center .hcenter background-image="images/bg.png"}
