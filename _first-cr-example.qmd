@@ -1,0 +1,29 @@
+:::: {.columns}
+::: {.column}
+<h2>Goal:</br><span class="small deemph">If you can write Quarto, you can write Closeread</span></h2>
+:::
+::: {.column}
+````
+---
+title: My First Closeread
+format: closeread-html
+---
+
+Hello world! Please read my Closeread story below.
+
+::::{.cr-section}
+
+Closeread enables scrollytelling.
+
+Draw your readers attention with: @cr-features
+
+:::{#cr-features}
+1. Highlighting
+2. Zooming
+3. Panning
+:::
+
+::::
+````
+:::
+::::

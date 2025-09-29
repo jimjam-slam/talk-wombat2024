@@ -16,63 +16,255 @@ format:
   background-video="images/bg.mp4"
   background-video-autoplay="true"
   background-video-loop="true"}
+
+:::{style="height: 200px;"}
+:::
  
-:::{.title-content .small}
-<br> 
+:::{.title-content .small .absolute style="left: 10px; bottom: 10px;"}
+
+
 ![](images/countercurrent.png){style="height:60px" alt="CounterCurrent logo"}  
 **JAMES GOLDIE**  
-DATA ENGINEER
-
+Data Engineer
 :::
 
-# Bullets {background-image="images/bg.png"}
+:::{.absolute style="font-size: 50%; right: 10px; bottom: 10px;"}
 
-# What's scrollytelling?
+Slides: **<https://wombat2024.talks.jamesgoldie.dev>**
 
-# Why is scrollytelling hard to do well?
+Code: **<https://github.com/jimjam-slam/talk-wombat2024>**
+:::
 
-I'm currently at CounterCurrent, helping ships save less fuel
+# What's scrollytelling? {background-image="images/bg.png"}
 
-But I worked as a data journalist at Monash
+## {background-iframe="https://www.nytimes.com/projects/2012/snow-fall/index.html#/?part=tunnel-creek" background-interactive="true"}
 
-Quarto made it super fast
+:::{style="background: #000000cc; padding: 0.25em 0.75em; border-radius: 2em; backdrop-filter: blur(10px) brightness(0.75);width: max-content; "}
+New York Times  
+[Snow Fall: The Avalanche at Tunnel Creek]{.small .deemph}
+:::
 
-(transition from why I love Quarto)
+## {background-iframe="https://www.miamiherald.com/news/special-reports/surfside-investigation/article256633336.html" background-interactive="true"}
 
-## Quarto has made regular web pages easy for data people
+:::{style="background: #000000cc; padding: 0.25em 0.75em; border-radius: 2em; backdrop-filter: blur(10px) brightness(0.75);width: max-content; "}
+Miami Herald  
+[House of Cards]{.small .deemph}
+:::
 
-- (compare plain knitted HTML to Quarto)
+## All scrollytelling has... {.center .hcenter background-image="images/bg.png"}
 
-## Engineering required for scrollytelling
+Elements that **stay on the page** and update as **text scrolls by**
 
-- Detecting whether things are on screen
-- Transitions
-- Sizing and positioning content
+## ... but it might also have: {.center .hcenter background-image="images/bg.png"}
 
-- Data journalism teams split this into engineering, design and data journalism
-- Previous single-person solutions were commercial (eg. ESRI)
+:::: {.columns}
+::: {.column}
+Graphic transitions
 
-# Enter Closeread
+Animations
 
-- Goal: make scrollytelling accessible to people familiar with Quarto
-- Goal: reasonable defaults with powerful options
-- Other goals
-- Design implications
+Sounds
+:::
+::: {.column}
+Maps
+
+Movies
+
+Chart build-ups
+:::
+::::
+
+## (or it might not!) {.center .hcenter background-image="images/bg.png"}
+
+These examples often take entire teams to build!
+
+:::{.small .deepmh}
+Data journalism • Engineering • Design • Reporting • Editing
+:::
+
+# Why is scrollytelling hard to do well? {
+  background-video="images/bg.mp4"
+  background-video-autoplay="true"
+  background-video-loop="true"}
+
+## Quarto {.center .hcenter background-image="images/bg.png"}
+
+takes care of a lot of web publishing fundamentals
+
+:::: {.columns}
+::: {.column}
+[Raw HTML]{.small .deemph}
+![](images/webpage-1.png){alt="Screenshot of an article, written as basic semantic HTML"}
+:::
+::: {.column}
+[Quarto output]{.small .deemph}
+![](images/webpage-2.png){alt="Screenshot of same article as output by Quarto"}
+:::
+::::
+
+
+## But scrollytelling requires even more engineering {.center .hcenter background-image="images/bg.png"}
+
+:::{.small .deemph}
+**Detecting** whether things are on screen  
   
-# Closeread Contest
+**Transitioning** between elements  
+  
+**Sizing and positioning** content [(on various phones, tablets and browsers!)]{.small .deemph}  
+  
+Drawing **attention** to elements on the page  
+  
+**Playing and synchronising** videos
+:::
 
-- [We're running another contest!](https://www.causeweb.org/cause/contests/data-scrollytelling) Closes Dec 20
+Most of these elements are built bespoke for each story
 
-# What's on the horizon
+## What else is out there? {.center .hcenter background-image="images/bg.png"}
 
-## Widget support
+Commercial solutions!  
+[But they're expensive]{.small .deemph}  
+[And not very flexible]{.small .deemph}  
+[And rarely work with the tools data folk use]{.small .deemph}
 
-- Contest entries that tried to use htmlwidgets
-- htmlwidgets, Jupyter widgets, ...
+# Enter Closeread {
+  background-video="images/bg.mp4"
+  background-video-autoplay="true"
+  background-video-loop="true"}
 
-## Video support
 
-- Videos that play when they enter
-- Can be used for mood setting, interviews
-    
+## {.center .hcenter background-image="images/bg.png"}
 
+{{< include _first-cr-example.qmd >}}
+
+## Ingredients of a Closeread {.center .hcenter background-image="images/bg.png"}
+
+Use Quarto cross-references to build a story
+
+\
+
+::::: {.columns .small .deemph}
+:::: {.column}
+**Stickies** are things that stick on the page.
+
+````
+:::{#cr-example}
+I want to show this off!
+:::
+````
+
+::::
+:::: {.column}
+**Triggers** scroll past normally and make stickies appear or change.
+
+````
+Look at this... @cr-example
+````
+
+::::
+:::::
+
+## {.center .hcenter background-image="images/bg.png"}
+
+:::: {.columns}
+::: {.column}
+<h2>Goal:</br><span class="small deemph">Reasonable defaults with powerful options</span></h2>
+:::
+::: {.column}
+Focus effects  
+[Zoom, pan and highlight images and text]{.small .deemph}
+
+Layout options  
+[Sidebars and overlays]{.small .deemph}
+
+Respect Quarto themes  
+[(and customise them without CSS)]{.small .deemph}
+
+Integrates with Observable JS  
+[For fully custom web graphics]{.small .deemph}
+:::
+::::
+  
+# Closeread Prize {
+  background-video="images/bg.mp4"
+  background-video-autoplay="true"
+  background-video-loop="true"}
+
+## {.center .hcenter background-image="images/bg.png"}
+
+Posit has run contests for Shiny, Great Tables, etc.
+
+They approached us about sponsoring a Closeread Prize late last year
+
+## 40 entries {.center .hcenter background-image="images/bg.png"}
+
+Sports • Social policy • Mathematics • Finance • Personal stories • History • Board games • Education • Astrophysics 
+
+## Prizes {.center .hcenter background-image="images/bg.png"}
+
+**Grand Prize:** Screenshot of EURO 2024 Final scrollytelling Analysis
+
+![](cr-soccer.png){alt="Screenshot of EURO 2024 Final scrollytelling Analysis"}
+
+## Prizes {.center .hcenter background-image="images/bg.png"}
+
+**Grand Prize:** Council Housing & Neighbourhood Income Inequality in Vienna
+
+![](cr-vienna.png){alt="Council Housing & Neighbourhood Income Inequality in Vienna"}
+
+## Prizes {.center .hcenter background-image="images/bg.png"}
+
+**Grand Prize:** Which way do you ski?
+
+![](cr-ski.png){alt="Which way do you ski?"}
+
+## Prizes {.center .hcenter background-image="images/bg.png"}
+
+**Grand Prize:** World Population Flags
+
+![](cr-flags.png){alt="World Population Flags"}
+
+## Common themes {.center .hcenter background-image="images/bg.png"}
+
+Less is more
+[1-2 sentences on screen at a time]{.small .deemph}
+
+You still need a compelling story
+[But that doesn't necessarily mean prize-winning research!]{.small .deemph}
+
+Build things up
+[Introduce one layer/facet/group at a time]{.small .deemph}
+
+## Another contest? Yes! {.center .hcenter background-image="images/bg.png"}
+
+This one is aimed at students!
+
+<https://www.causeweb.org/cause/contests/data-scrollytelling>
+
+Closes Dec 20
+
+# What's on the horizon {
+  background-video="images/bg.mp4"
+  background-video-autoplay="true"
+  background-video-loop="true"}
+
+## Widget support {.center .hcenter background-image="images/bg.png"}
+
+Lots of Closeread Prize entries that tried to use htmlwidgets!
+
+Aiming to support htmlwidgets (R), Jupyter widgets (Python), ...
+
+## Video support {.center .hcenter background-image="images/bg.png"}
+
+Videos that play and loop when they enter  
+[Think of these like museum exhibits!]{.small .deemph}
+
+Videos that progress as you scroll  
+[Good for technical pieces that require pacing]{.small .deemph}
+
+# Thank you! {
+  background-video="images/bg.mp4"
+  background-video-autoplay="true"
+  background-video-loop="true"}
+
+[me@jamesgoldie.dev](mailto:me@jamesgoldie.dev)  
+[bsky.app/profile/jamesgoldie.dev](https://bsky.app/profile/jamesgoldie.dev>)

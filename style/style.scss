@@ -81,7 +81,7 @@ $link-color: #f5a623 !default;
 }
 
 // frost and darken non-video backgrounds
-.slide-background:not(:has(video)) {
+.slide-background:not(:has(video)):not(:has(iframe)) {
   filter: blur(8px) brightness(0.75);
 }
 
@@ -131,6 +131,14 @@ $section-styles:
 
   .hcenter {
     text-align: center;
+  }
+
+  .overlay {
+    background: #000000cc;
+    padding: 0.25em 0.75em;
+    backdrop-filter: blur(10px) brightness(0.75);
+    width: max-content;
+    box-shadow: 0 10px 20px 5px #00000044;
   }
 
   .slides .title-slide {

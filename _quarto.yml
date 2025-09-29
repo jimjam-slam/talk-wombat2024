@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: out
   resources:
-    # - images
+    - images/*
     - /style/fonts/*.woff2
   render:
     - index.qmd
