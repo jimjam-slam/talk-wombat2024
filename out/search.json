@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "",
+    "section": "",
+    "text": "New York Times\nSnow Fall: The Avalanche at Tunnel Creek"
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "",
+    "section": "",
+    "text": "Miami Herald\nHouse of Cards"
+  },
+  {
+    "objectID": "index.html#all-scrollytelling-has",
+    "href": "index.html#all-scrollytelling-has",
+    "title": "",
+    "section": "All scrollytelling has…",
+    "text": "All scrollytelling has…\nElements that stay on the page and update as text scrolls by"
+  },
+  {
+    "objectID": "index.html#but-it-might-also-have",
+    "href": "index.html#but-it-might-also-have",
+    "title": "",
+    "section": "… but it might also have:",
+    "text": "… but it might also have:\n\n\nGraphic transitions\nAnimations\nSounds\n\nMaps\nMovies\nChart build-ups"
+  },
+  {
+    "objectID": "index.html#or-it-might-not",
+    "href": "index.html#or-it-might-not",
+    "title": "",
+    "section": "(or it might not!)",
+    "text": "(or it might not!)\nThese examples often take entire teams to build!\n\nData journalism • Engineering • Design • Reporting • Editing"
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "",
+    "section": "Quarto",
+    "text": "Quarto\ntakes care of a lot of web publishing fundamentals\n\n\nRaw HTML \n\nQuarto output"
+  },
+  {
+    "objectID": "index.html#but-scrollytelling-requires-even-more-engineering",
+    "href": "index.html#but-scrollytelling-requires-even-more-engineering",
+    "title": "",
+    "section": "But scrollytelling requires even more engineering",
+    "text": "But scrollytelling requires even more engineering\n\nDetecting whether things are on screen\nTransitioning between elements\nSizing and positioning content (on various phones, tablets and browsers!)\nDrawing attention to elements on the page\nPlaying and synchronising videos\n\nMost of these elements are built bespoke for each story"
+  },
+  {
+    "objectID": "index.html#what-else-is-out-there",
+    "href": "index.html#what-else-is-out-there",
+    "title": "",
+    "section": "What else is out there?",
+    "text": "What else is out there?\nCommercial solutions!\nBut they’re expensive\nAnd not very flexible\nAnd rarely work with the tools data folk use"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "",
+    "section": "",
+    "text": "Goal:If you can write Quarto, you can write Closeread\n\n\n---\ntitle: My First Closeread\nformat: closeread-html\n---\n\nHello world! Please read my Closeread story below.\n\n::::{.cr-section}\n\nCloseread enables scrollytelling.\n\nDraw your readers attention with: @cr-features\n\n:::{#cr-features}\n1. Highlighting\n2. Zooming\n3. Panning\n:::\n\n::::"
+  },
+  {
+    "objectID": "index.html#ingredients-of-a-closeread",
+    "href": "index.html#ingredients-of-a-closeread",
+    "title": "",
+    "section": "Ingredients of a Closeread",
+    "text": "Ingredients of a Closeread\nUse Quarto cross-references to build a story\n\n\n\n\nStickies are things that stick on the page.\n:::{#cr-example}\nI want to show this off!\n:::\n\nTriggers scroll past normally and make stickies appear or change.\nLook at this... @cr-example"
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "",
+    "section": "",
+    "text": "Goal:Reasonable defaults with powerful options\n\n\nFocus effects\nZoom, pan and highlight images and text\nLayout options\nSidebars and overlays\nRespect Quarto themes\n(and customise them without CSS)\nIntegrates with Observable JS\nFor fully custom web graphics"
+  },
+  {
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
+    "title": "",
+    "section": "",
+    "text": "Posit has run contests for Shiny, Great Tables, etc.\nThey approached us about sponsoring a Closeread Prize late last year"
+  },
+  {
+    "objectID": "index.html#entries",
+    "href": "index.html#entries",
+    "title": "",
+    "section": "40 entries",
+    "text": "40 entries\nSports • Social policy • Mathematics • Finance • Personal stories • History • Board games • Education • Astrophysics"
+  },
+  {
+    "objectID": "index.html#prizes",
+    "href": "index.html#prizes",
+    "title": "",
+    "section": "Prizes",
+    "text": "Prizes\nGrand Prize: Screenshot of EURO 2024 Final scrollytelling Analysis"
+  },
+  {
+    "objectID": "index.html#prizes-1",
+    "href": "index.html#prizes-1",
+    "title": "",
+    "section": "Prizes",
+    "text": "Prizes\nSpecial Prize: Council Housing & Neighbourhood Income Inequality in Vienna"
+  },
+  {
+    "objectID": "index.html#prizes-2",
+    "href": "index.html#prizes-2",
+    "title": "",
+    "section": "Prizes",
+    "text": "Prizes\nSpecial Prize: Which way do you ski?"
+  },
+  {
+    "objectID": "index.html#prizes-3",
+    "href": "index.html#prizes-3",
+    "title": "",
+    "section": "Prizes",
+    "text": "Prizes\nSpecial Prize: World Population Flags"
+  },
+  {
+    "objectID": "index.html#common-themes",
+    "href": "index.html#common-themes",
+    "title": "",
+    "section": "Common themes",
+    "text": "Common themes\nLess is more\n1–2 sentences on screen at a time\nYou still need a compelling story\nBut that doesn’t necessarily mean prize-winning research!\nBuild things up\nIntroduce one layer/facet/group at a time"
+  },
+  {
+    "objectID": "index.html#another-contest-yes",
+    "href": "index.html#another-contest-yes",
+    "title": "",
+    "section": "Another contest? Yes!",
+    "text": "Another contest? Yes!\nThis one is aimed at students!\nhttps://www.causeweb.org/cause/contests/data-scrollytelling\nCloses Dec 20"
+  },
+  {
+    "objectID": "index.html#widget-support",
+    "href": "index.html#widget-support",
+    "title": "",
+    "section": "Widget support",
+    "text": "Widget support\nLots of Closeread Prize entries that tried to use htmlwidgets!\nAiming to support htmlwidgets (R), Jupyter widgets (Python), …"
+  },
+  {
+    "objectID": "index.html#video-support",
+    "href": "index.html#video-support",
+    "title": "",
+    "section": "Video support",
+    "text": "Video support\nVideos that play and loop when they enter\nThink of these like museum exhibits!\nVideos that progress as you scroll\nGood for technical pieces that require pacing"
+  }
+]
