@@ -1,43 +1,35 @@
 /*-- scss:defaults --*/
 
 @font-face {
-  font-family: Inter;
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("/style/fonts/Inter-Light.woff2") format("woff2");
+  src: url("/style/fonts/IBMPlexSans-Light.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: Inter;
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url("/style/fonts/Inter-LightItalic.woff2") format("woff2");
+  src: url("/style/fonts/IBMPlexSans-LightItalic.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: Inter;
+  font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/style/fonts/Inter-Bold.woff2") format("woff2");
+  src: url("/style/fonts/IBMPlexSans-Semibold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: Inter;
+  font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url("/style/fonts/Inter-BoldItalic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: Inter;
-  font-style: italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url("/style/fonts/Inter-ExtraBoldItalic.woff2") format("woff2");
+  src: url("/style/fonts/IBMPlexSans-SemiboldItalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -72,7 +64,7 @@
   src: url("/style/fonts/JetBrainsMono-Italic.woff2") format("woff2");
 }
 
-$font-family-sans-serif: "Inter", Helvetica, sans-serif !default;
+$font-family-sans-serif: "IBM Plex Sans", Helvetica, sans-serif !default;
 $font-family-monospace: "JetBrains Mono", monospace !default;
 $presentation-heading-font: "DM Serif Text", serif !default;
 
@@ -89,7 +81,7 @@ $link-color: #f5a623 !default;
 }
 
 // frost and darken non-video backgrounds
-.slide-background :not(:has(video)) {
+.slide-background:not(:has(video)) {
   filter: blur(8px) brightness(0.75);
 }
 
