@@ -266,5 +266,8 @@ Videos that progress as you scroll
   background-video-autoplay="true"
   background-video-loop="true"}
 
+Try it out at  
+**closeread.dev**
+
 [me@jamesgoldie.dev](mailto:me@jamesgoldie.dev)  
 [bsky.app/profile/jamesgoldie.dev](https://bsky.app/profile/jamesgoldie.dev>)
