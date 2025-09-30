@@ -37,18 +37,22 @@ Code: **<https://github.com/jimjam-slam/talk-wombat2024>**
 
 # What's scrollytelling? {background-image="images/bg.png"}
 
+:::{.callout-warning .small .deemph appearance="simple" style="width: max-content;"}
+The following examples may not appear if you are browsing on the web. Open the links to check them out!
+:::
+
 ## {background-iframe="https://www.nytimes.com/projects/2012/snow-fall/index.html#/?part=tunnel-creek" background-interactive="true"}
 
 :::{.overlay}
 New York Times  
-[Snow Fall: The Avalanche at Tunnel Creek]{.small .deemph}
+[Snow Fall: The Avalanche at Tunnel Creek](https://www.nytimes.com/projects/2012/snow-fall/index.html){.small .deemph}
 :::
 
 ## {background-iframe="https://www.miamiherald.com/news/special-reports/surfside-investigation/article256633336.html" background-interactive="true"}
 
 :::{.overlay}
 Miami Herald  
-[House of Cards]{.small .deemph}
+[House of Cards](https://www.miamiherald.com/news/special-reports/surfside-investigation/article256633336.html){.small .deemph}
 :::
 
 ## All scrollytelling has... {.center .hcenter background-image="images/bg.png"}
